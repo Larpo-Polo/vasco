@@ -1,0 +1,16 @@
+[project]
+name = "vasco"
+version = "0.1.0"
+description = "Webcrawler for Larpo Polo (Organization), Marco is the search engine that this webcrawler powers"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.162.0",
+]
+
+[project.scripts]
+vasco = "vasco:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
